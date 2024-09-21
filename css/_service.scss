@@ -1,0 +1,77 @@
+.service-main {
+    width: 100%;
+    display: inline-block;
+    padding: 50px 0;
+    @include responsive('large') {
+        padding: 40px 0;
+    } 
+    @include responsive('small') {
+        padding: 30px 0;
+    }
+    .service-cards {
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 30px;
+        padding-top: 40px;
+        @include responsive('large') {
+            column-gap: $gutterGap + 5;
+            row-gap: $gutterGap + 5;
+            padding-top: $gutterGap + 15;
+        }
+        .service-card {
+            width: calc(33.33% - 20px);
+            border: 1px solid;
+            padding: 20px 20px 40px 20px;
+            border-radius: 10px;
+            min-height: 250px;
+            box-shadow: 0px 3px 8px #ddd;
+            transition: 0.5s ease all;
+            @include responsive('medium') {
+                width: calc(50% - 10px);
+            }
+            @include responsive('small') {
+                width: 100%;
+            }
+            &:hover {
+                border-color: transparent;
+            }
+            h4 {
+                font-size: $small;
+                margin-bottom: 10px;
+            }
+            h2.card-title {
+                font-size: $regular + 2;
+                margin-bottom: 10px;
+                font-weight: $fontRegular;
+                @include responsive('large') {
+                    font-size: $small + 6;
+                }
+            }
+            p.card-content {
+                font-size: $small;
+                color: $secondaryColor;
+                font-weight: $fontLight;
+                min-height: 160px;
+                @include responsive('large') {
+                    min-height: 130px;
+                }
+                @include responsive('small') {
+                    min-height: 100px;
+                    font-size: $small - 2;
+                }
+            }
+            a.read-more {
+                transition: 0.5s ease all;
+                font-size: $small;
+                text-decoration: none;
+                color: $black;
+                font-family: $fontFamily;
+                &:hover {
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+}

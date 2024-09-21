@@ -1,0 +1,101 @@
+.footer-main {
+    width: 100%;
+    padding-top: 40px;
+    background: $footerBgColor;
+    margin-top: 50px;
+    .footer-top {
+        padding-bottom: 40px;
+        display: flex;
+        width: 100%;
+        @include responsive('medium') {
+            padding-bottom: $gutterGap + 5;
+        }
+        @include responsive('small') {
+            flex-wrap: wrap;
+        }
+        h4.footer-heading {
+            font-size: $small + 4;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 33.33%;
+            @include responsive('small') {
+                width: 100%;
+                margin-bottom: $gutterGap ;
+            }
+        }
+        
+        .learn-more {
+            width: 33.33%;
+            @include responsive('small') {
+                width: 100%;
+                margin-bottom: $gutterGap ;
+            }
+            ul {
+                margin: 0;
+                li {
+                    margin-bottom: $small - 2;
+                    a {
+                        text-decoration: none;
+                        color: $black;
+                        font-size: $small;
+                        font-weight: $fontMedium;
+                        font-family: $fontFamily;
+                    }
+                }                
+            }
+        }
+        .get-in-touch {
+            width: 33.33%;
+            @include responsive('small') {
+                width: 100%;
+            }
+            p {
+                margin-bottom: 10px;
+                color: $black;
+                font-size: $small;
+            }
+            a {
+                text-decoration: none;
+                display: block;
+                margin: 16px 0;
+                font-size: $small;
+                color: $black;
+                font-family: $fontFamily;
+            }
+        }
+    }
+    .footer-bottom {
+        width: auto;
+        border-top: 1px solid $secondaryColor;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include responsive('small') {
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 10px;
+        }
+        p {
+            font-size: $small;
+            @include responsive('medium') {
+                font-size: $small - 2;
+            }
+        } 
+        .social-links {
+            display: flex;
+            column-gap: 10px;
+            align-items: center;
+            a {
+                width: auto;
+                img {
+                    border-radius: 5px;
+                    width: 100%;
+                    max-width: 36px;
+                }
+                
+            }
+        }       
+    }
+}

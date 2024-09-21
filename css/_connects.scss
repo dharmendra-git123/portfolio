@@ -1,0 +1,70 @@
+.lats-connects-main {
+    width: 100%;
+    padding: 40px 0;
+    @include responsive('medium') {
+        padding: 30px 0;
+    }
+    .lats-connects {
+        display: flex;
+        column-gap: 40px;
+        @include responsive('medium') {
+            column-gap: $gutterGap + 15;
+        } 
+        @include responsive('small') {
+            flex-wrap: wrap;
+        }
+        .connects-img {
+            width: 50%;
+            @include responsive('small') {
+                width: 100%;
+            }
+            img {
+                border-radius: 10px;
+                width: 100%;
+            }
+        }
+        .connects-details {
+            width: 50%;
+            padding-top: 40px;
+            @include responsive('small') {
+                width: 100%;
+            }
+            p {
+                font-size: $small;
+                color: $secondaryColor;
+                margin-bottom: 30px;
+            }
+            .contact-details {
+                width: auto;
+                display: flex;
+                margin-bottom: 20px;
+                p {
+                    margin-bottom: 0;
+                }
+                .content-img {
+                    width: 8%;
+                    img {
+                        width: 100%;
+                        max-width: 24px;
+                    }
+                }
+                .content {
+                    width: 92%;
+                    h6 {
+                        font-size: $small + 4;
+                        font-weight: $fontBlod;
+                    }
+                    p {
+                        font-size: $small;
+                        padding-top: 6px;
+                        a {
+                            text-decoration: none;
+                            color: $secondaryColor;
+                        }
+                    }
+                    
+                }
+            }
+        }        
+    }
+}
