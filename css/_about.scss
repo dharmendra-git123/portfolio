@@ -29,7 +29,7 @@
                     font-size: $medium;
                 }
                 @include responsive('small') {
-                    font-size: $regular; 
+                    font-size: $regular + 2; 
                 }
             }
             p {

@@ -202,7 +202,7 @@ header .header-main .mobile-menu {
   }
   header .header-main .mobile-menu span:first-child {
     position: absolute;
-    top: 0;
+    top: 2px;
     left: 0;
     height: 3px;
     width: 40px;
@@ -317,7 +317,7 @@ header .mobile-icon .mobile-menu span:nth-child(2) {
 }
 @media screen and (max-width: 576px) {
   .hero-section .hero-main .hero-content h1 {
-    font-size: 24px;
+    font-size: 26px;
   }
 }
 .hero-section .hero-main .hero-content p {
