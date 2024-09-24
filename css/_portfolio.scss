@@ -8,7 +8,7 @@
         column-gap: 30px;
         row-gap: 30px;
         flex-wrap: wrap;
-        padding-top: 40px;
+        padding-top: 40px ;
     }
     .portfolio-card {
         width: calc(33.33% - 20px);
@@ -45,9 +45,9 @@
                 text-decoration: none;
                 img {
                     width: 100%;
-                    min-height: 250px;
+                    // min-height: 200px;
                     object-fit: cover;
-                    object-position: top;
+                    object-position: center;
                     border-radius: 10px;
                     overflow: hidden;
                     transition: 0.5s ease all;
@@ -63,7 +63,14 @@
                     font-size: $small + 2;
                     font-weight: $fontMedium;
                     margin-bottom: 15px;
+                    
                 }
+            }
+            p {
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;  
+                overflow: hidden;
             }
         }
     }
